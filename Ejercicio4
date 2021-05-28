@@ -1,0 +1,25 @@
+% Ti­tulo: Teorema Fundamental del Calculo
+% Autor: Alexia Michell Blas Hernandez (alexiabh10) michhernandez1001@gmail.com
+% Fecha: 20210527
+% Grupo:3201
+% Correo: michhernandez1001@gmail.com
+% Materia: Calculo Integral
+%Ejercicio 4: 1+ sqrt(x)/x^2
+
+clc
+clear  
+
+syms x;
+fx=input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR  "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR  ");
+resultado = (-1/b - 2/sqrt(b)) - (-1/a - 2/sqrt(a))
+
+x = 1:0.2:4;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"m")
