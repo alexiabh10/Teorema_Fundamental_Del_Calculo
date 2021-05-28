@@ -1,0 +1,26 @@
+% Ti­tulo: Teorema Fundamental del Calculo
+% Autor: Alexia Michell Blas Hernandez (alexiabh10) michhernandez1001@gmail.com
+% Fecha: 20210527
+% Grupo:3201
+% Correo: michhernandez1001@gmail.com
+% Materia: Calculo Integral
+%Ejercicio 1: x^3
+
+clc
+clear  
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR  "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR  ");
+resultado = (b^4)/4 - (a^4)/4
+
+
+x = -1:0.2:3;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"m")
