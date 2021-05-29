@@ -1,0 +1,25 @@
+% Ti­tulo: Teorema Fundamental del Calculo
+% Autor: Alexia Michell Blas Hernandez (alexiabh10) michhernandez1001@gmail.com
+% Fecha: 20210527
+% Grupo:3201
+% Correo: michhernandez1001@gmail.com
+% Materia: Calculo Integral
+%Ejercicio 3:  sqrt(2*x)+3*sqrt(x) 
+%no
+clc
+clear  
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR  "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR  ");
+resultado = (2*b)*(sqrt(2*b))/3 + ( 3*b*2)/4 - (2*a)*(sqrt(2*a))/3 + ( 3*a*2)/4
+
+x = 0:0.2:8;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"m")
